@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const SignUp = () => {
@@ -95,7 +96,7 @@ const SignUp = () => {
                                     </div>
                                     <div className="col-12 d-flex justify-content-between mt-4">
                                         <button type="submit" className="btn btn-success px-4">Register</button>
-                                        <button type="button" className="btn btn-outline-primary px-4">Log in</button>
+                                        <Link to="/" className="btn btn-outline-primary px-4">Back to LogIn</Link>
                                     </div>
                                 </form>
                             </div>
