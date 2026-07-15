@@ -33,7 +33,9 @@ const ViewAll = () => {
                                     <div className="col-12 col-md-8 col-lg-6" key={index}>
                                         <div className="card shadow-sm border-0">
                                             <div className="card-body">
-                                                <h6 className="card-subtitle mb-2 text-primary">User ID: {value.userId}</h6>
+                                                <h6 className="card-subtitle mb-2 text-primary">
+                                                    Author: {value.userId?.name || value.userId}
+                                                </h6>
                                                 <p className="card-text fs-5">{value.Message}</p>
                                             </div>
                                             <div className="card-footer bg-transparent border-0 text-end">
